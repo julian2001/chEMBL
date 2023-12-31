@@ -1,5 +1,3 @@
-// swift-tools-version: 5.9
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 // swift-tools-version:5.3
 import PackageDescription
@@ -12,14 +10,13 @@ let package = Package(
             targets: ["Osiris"]),
     ],
     dependencies: [
-        // Example dependencies that you might use for networking and JSON parsing
-        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0"),
-        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.0")
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.8.1")),
+        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", .upToNextMajor(from: "5.0.0")),
     ],
     targets: [
         .target(
             name: "Osiris",
-            dependencies: ["alamofire", "SwiftyJSON"]),
+            dependencies: ["Alamofire", "SwiftyJSON"]),
         .testTarget(
             name: "OsirisTests",
             dependencies: ["Osiris"]),
