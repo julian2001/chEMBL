@@ -1,8 +1,8 @@
 //
-//  OsirisSecurityService.swift
-//  Osiris
+//  VeraSecurityService.swift
+// Vera
 //
-//  Created by Julian Reyes on 12/25/23.
+//  Created by Julian Reyes on 04/27/24
 //
 
 
