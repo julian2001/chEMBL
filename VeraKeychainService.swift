@@ -1,6 +1,6 @@
 //
-//  OsirisKeychainService.swift
-//  Osiris
+//  VeraKeychainService.swift
+//  Vera
 //
 //  Created by Julian Reyes on 12/25/23.
 //
@@ -94,7 +94,7 @@ func saveKey() {
         }
         
         let privateKey = P256.Signing.PrivateKey()
-        let keychainItem = KeychainItem(service: "com.cognitivepcsolutions.confuciusapp", account: email)
+        let keychainItem = KeychainItem(service: "com.cognitivepcsolutions.veraapp", account: email)
         try keychainItem.saveCryptoKey(privateKey)
     } catch {
         print("An error occurred: \(error)")
@@ -108,7 +108,7 @@ func readKey() -> P256.Signing.PrivateKey? {
         return nil
     }
     
-    let keychainItem = KeychainItem(service: "com.cognitivepcsolutions.confuciusapp", account: email)
+    let keychainItem = KeychainItem(service: "com.cognitivepcsolutions.veraapp", account: email)
     do {
         let retrievedKey = try keychainItem.readCryptoKey()
         return retrievedKey
