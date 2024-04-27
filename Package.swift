@@ -3,11 +3,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "Osiris",
+    name: "Vera",
     products: [
         .library(
-            name: "Osiris",
-            targets: ["Osiris"]),
+            name: "Vera",
+            targets: ["Vera"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.8.1")),
@@ -15,10 +15,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Osiris",
+            name: "Vera",
             dependencies: ["Alamofire", "SwiftyJSON"]),
         .testTarget(
-            name: "OsirisTests",
-            dependencies: ["Osiris"]),
+            name: "VeraTests",
+            dependencies: ["Vera"]),
     ]
 )
