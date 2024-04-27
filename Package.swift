@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .target(
             name: "Vera",
-            dependencies: ["Alamofire", "SwiftyJSON"]),
+            dependencies: ["SwiftyJSON"]),
         .testTarget(
             name: "VeraTests",
             dependencies: ["Vera"]),
