@@ -1,14 +1,14 @@
 //
-//  OsirisApp.swift
+//  VeraApp.swift
 //  Osiris
 //
-//  Created by Julian Reyes on 12/24/23.
-//
+//  Created by Julian Reyes on 04/27/24.
+//Vera
 
 import SwiftUI
 
 @main
-struct OsirisApp: App {
+struct VeraApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
